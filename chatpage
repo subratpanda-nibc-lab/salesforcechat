@@ -6,7 +6,7 @@
 <body>	
 <style type='text/css'>
     .embeddedServiceHelpButton .helpButton .uiButton {
-        background: #ff5a54;
+        background-color: #ff5a54;
         font-family: "Verdana", sans-serif;
     }
     .embeddedServiceHelpButton .helpButton .uiButton:focus {

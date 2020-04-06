@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> </meta>
+	<header>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> </meta>
+	</header>
+<body>	
 <style type='text/css'>
     .embeddedServiceHelpButton .helpButton .uiButton {
         background: #ff5a54;
@@ -88,4 +91,5 @@
         initESW('https://service.force.com');
     }
 </script>
+</body>
 </html>

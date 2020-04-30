@@ -6,12 +6,49 @@
 <body>	
 <style type='text/css'>
     .embeddedServiceHelpButton .helpButton .uiButton {
+        background-color: #ff5a54;
         font-family: "Verdana", sans-serif;
-	background:#ff5a54;
     }
     .embeddedServiceHelpButton .helpButton .uiButton:focus {
         outline: 1px solid #ff5a54;
     }
+    .embeddedServiceLiveAgentStateChatHeader .message {
+        width: auto;
+    }
+    .embeddedServiceLiveAgentStateChatHeader .content {
+    height: 75px;
+    }
+    .embeddedServiceLiveAgentStateChatAvatar .avatar {
+    width: 0px;
+    height: 0px;
+    }
+    .embeddedServiceLiveAgentStateChatHeaderOption .embeddedServiceIcon {
+    width: 20px;
+    height: 20px;
+    }
+    .embeddedServiceSidebarHeader .fade.fade-4x {
+    display: none;
+    }
+    embeddedServiceSidebarMinimizedDefaultUI.helpButton {
+    background-color: #48bafb;
+    border-color: #48bafb;
+    }
+   .embeddedServiceSidebarMinimizedDefaultUI .content {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 12px;
+    height: 46px;
+    box-shadow: 0 0 18px 20px #48bafb;
+    border-radius: 23px;
+    line-height: 1;
+    background: #48bafb;
+    font-size: .875em;
+    color: #fff;
+    font-weight: normal;
+    background-color: #48bafb;
+    border-radius: 23px;
+    }
+   
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -34,7 +71,6 @@
         //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
         //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
         //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-        
         
         /****Help from salesforce****/
         embedded_svc.settings.extraPrechatInfo = [{
@@ -60,6 +96,7 @@
                                                     "entityName":"Contact",
                                                     "saveToTranscript":"Contact"
                                                     }];
+
         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
         embedded_svc.settings.entryFeature = 'LiveAgent';
 
